@@ -20,18 +20,18 @@ class _KontenState extends State<Konten> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("WhatsApp"),
+        title: const Text("WhatsApp"),
         backgroundColor: Colors.green,
         foregroundColor: Colors.white,
         actions: [
           IconButton(
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             onPressed: () {
               print("Icon dilik");
             },
           ),
           IconButton(
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
             onPressed: () {
               print("Hello World");
             },
@@ -42,7 +42,7 @@ class _KontenState extends State<Konten> {
         index: selectedNavbar,
         children: [
           ListView(
-            children: [
+            children: const [
               ListTile(
                 leading: CircleAvatar(
                   backgroundImage: NetworkImage("https://th.bing.com/th/id/OIP.5-mDBIk0BFx0D3b7_4ZgtAHaJF?rs=1&pid=ImgDetMain"),
@@ -61,12 +61,12 @@ class _KontenState extends State<Konten> {
               ),
             ],
           ),
-          Center(child: Text("Status")),
-          Center(child: Text("Community")),
-          Center(child: Text("Calls")),
+          const Center(child: Text("Status")),
+          const Center(child: Text("Community")),
+          const Center(child: Text("Calls")),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
+      bottomNavigationBar: BottomNavigationBar(items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.message_outlined),
           label: "Chat",
